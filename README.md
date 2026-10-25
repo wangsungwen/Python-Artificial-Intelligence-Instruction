@@ -42,7 +42,9 @@
 | 第 2 週 | [下載 PPTX](五週Python人工智慧教學包/第2週/第二週講義PPTX.pptx) | [下載筆記本](五週Python人工智慧教學包/第2週/第二週_Colab完整教學與習題解答.ipynb) · [在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC2%E9%80%B1/%E7%AC%AC%E4%BA%8C%E9%80%B1_Colab%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8%E8%88%87%E7%BF%92%E9%A1%8C%E8%A7%A3%E7%AD%94.ipynb) | 117 頁講義、7 題解答 |
 | 第 3 週 | [下載 PPTX](五週Python人工智慧教學包/第3週/第三週講義PPTX.pptx) | [下載筆記本](五週Python人工智慧教學包/第3週/第三週_Colab完整教學與習題解答.ipynb) · [在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC3%E9%80%B1/%E7%AC%AC%E4%B8%89%E9%80%B1_Colab%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8%E8%88%87%E7%BF%92%E9%A1%8C%E8%A7%A3%E7%AD%94.ipynb) | 150 頁講義、13 題解答 |
 
-筆記本已內嵌圖片並保留執行輸出，不需另傳 PPTX；使用 Python 3.10 以上的一般 CPU 執行階段即可。預設 `INTERACTIVE=False` 可全部執行；改為 `True` 並重跑設定格，可逐題自行輸入。三份筆記本已在 Python 3.12 的乾淨核心執行驗證。
+筆記本已內嵌圖片並保留執行輸出，不需另傳 PPTX；使用 Python 3.10 以上的一般 CPU 執行階段即可。第 1、3 週預設 `INTERACTIVE=False` 可全部執行；改為 `True` 並重跑設定格，可逐題自行輸入，這兩份已在 Python 3.12 的乾淨核心執行驗證。
+
+第 2 週已替換為使用者提供的更新版，原樣保留程式及輸出，已檢查筆記本格式，未重新執行全本。新版新增直接呼叫 `input()` 的儲存格，不受 `INTERACTIVE` 開關控制，請逐格操作並依提示輸入；`score + 10`（字串加整數）及 `int("3.14")` 等錯誤示範會產生例外，全部執行到此會中斷，閱讀後可手動執行下一格。
 
 第一週主題為 Python 入門、開發環境、程式邏輯、變數與資料型別；第二週主題為輸出、輸入、運算式與選擇敘述；第三週為迴圈、串列與函式。舊版第一、三週分離式學員／講師筆記本，以及第二週世界時鐘、計算機已由新版取代，舊檔可從 Git 歷史查閱。
 
