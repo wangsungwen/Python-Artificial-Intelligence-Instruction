@@ -2,12 +2,6 @@
 
 供課程學員下載的五週 Python 人工智慧教材。每週 180 分鐘，含 10 分鐘休息。
 
-## 下載教材
-
-**[點此一次下載全部教材（ZIP）](https://github.com/wangsungwen/Python-Artificial-Intelligence-Instruction/archive/refs/heads/main.zip)**
-
-下載後先解壓縮，再進入「五週Python人工智慧教學包」資料夾。也可以使用本頁上方的 **Code → Download ZIP**。
-
 ## 開始使用
 
 1. 先閱讀 `00_課程總覽與授課指南.docx` 及 `README_先讀我.txt`。
