@@ -1,0 +1,80 @@
+語音 AI 與多語字幕影片：技術教材
+技術資料查核日：2026-11-03
+
+一、教材內容
+1. 教學簡報.pptx：49 頁可編輯投影片，每頁均有講者備註。
+2. 逐頁教學講義.html：內嵌全部簡報畫面、詳細解說與可點擊來源。
+   用瀏覽器開啟即可離線閱讀；外部來源連結需要網路。
+   可用瀏覽器列印功能另存 PDF。
+3. subtitle_tools.py：字幕後處理教學工具，不會執行語音辨識或翻譯。
+4. cues.example.json：雙語字幕時間區間示例。
+5. test_subtitle_tools.py：6 個純邏輯測試。
+
+二、與原有 Notebook 的關係
+目前 V1/V2 工程解析版保留不動。V2 原本產出 MP4、獨立 SRT 與時間軸 JSON，
+不代表字幕已燒錄在影片上。本工具可對既有結果做字幕軌封裝或燒錄，無需重跑 TTS。
+簡報中 ASR、forced alignment、服務化及生成式動態影片皆標為延伸方向。
+目前主線模型現況與舊版 chatterbox-tts 0.1.6 的 API 不能直接混用。
+
+三、執行字幕實作的前提
+- Python 3.10 或更新版本；字幕工具本身不需要第三方 Python 套件。
+- FFmpeg、ffprobe 已安裝，且能在終端機輸入名稱執行。
+- 燒錄需要 FFmpeg 的 subtitles/libass 濾鏡及 libx264 編碼器。
+- 中文顯示需要含中文字形的字型。Windows 通常已有微軟正黑體；Linux/Colab
+  可自行安裝適當中文字型，或用 --fonts 指定有權使用的字型檔目錄。
+- 本工具針對 MP4 影像與 UTF-8 SRT；影片既有音訊串流應相容於 MP4。
+
+四、完整操作
+在本教材資料夾開啟終端機。
+
+1. 確認工具：
+   python --version
+   ffmpeg -version
+   ffprobe -version
+   ffmpeg -filters
+
+2. 將示例 JSON 轉成字幕（起訖時間請依實際影片調整）：
+   python subtitle_tools.py srt cues.example.json demo.srt
+
+3. 使用 V2 的 video.mp4 和 subtitles.srt 產出字幕軌版本：
+   python subtitle_tools.py soft video.mp4 subtitles.srt video_soft.mp4 --language zho
+   英文字幕可使用 --language eng。
+
+4. 產出直接顯示字幕的影片：
+   python subtitle_tools.py burn video.mp4 subtitles.srt video_burn.mp4
+   指定字型檔資料夾的例子：
+   python subtitle_tools.py burn video.mp4 subtitles.srt video_burn.mp4 --fonts "D:/my_fonts"
+
+5. 路徑有空白時使用引號：
+   python subtitle_tools.py soft "D:/my project/video.mp4" "D:/my project/subtitles.srt" "D:/my project/video_soft.mp4"
+
+6. 檢查媒體串流：
+   ffprobe -v error -show_streams -show_format -of json video_soft.mp4
+   soft 版本應有 subtitle stream；burn 版本字已成為影像的一部分，通常無 subtitle stream。
+   必須實際播放檢查語意、時間、換行、中文與播放器相容性。
+
+7. 執行純邏輯測試：
+   python -m unittest test_subtitle_tools.py -v
+
+五、函式閱讀順序
+- milliseconds / timestamp：時間有效性與格式化。
+- cues_to_srt：cue schema、排序、重疊與毫秒量化驗證。
+- new_output：阻止覆蓋輸入或既有檔案。
+- run：argv 清單、退出碼、stderr 及 1800 秒 timeout。
+- media：先探測影片，再於暫存目錄正規化字幕檔名，執行封裝或燒錄。
+- main：解析命令列並組裝依賴。
+
+六、工具邊界與已測範圍
+- JSON cues 驗證時間與文字；外部 SRT 交由 FFmpeg 讀取，本工具沒有完整 SRT parser。
+- 未自動檢查外部 SRT 每段是否超出影片長度，需使用者校閱。
+- 不會自動翻譯、辨識音訊或做逐字時間對齊。
+- 不覆蓋既有輸出；重跑請換新檔名。失敗可能留下不完整輸出，應先人工確認。
+- 6 個單元測試已通過。
+- 已用 3 秒測試影片完成 soft 與 burn 整合測試，確認串流與時長，並查看中英燒錄畫面。
+- 該測試使用純音作為測試音軌，不是語音 AI 的生成品質測試。
+- 本次未下載或重新執行 TTS、ASR、翻譯模型與 GPU 端到端測試。
+
+七、授權與課堂交付
+教材整理與字幕工具為本次新增內容。模型、套件、字型及輸入圖片/聲音各有自己的條款。
+來源與模型限制見逐頁講義與簡報第 44 頁。未隨教材散布模型權重或系統字型。
+每組提交：輸入契約、原文/譯文、參數與環境紀錄、三種字幕輸出、測試結果及失敗分析。
