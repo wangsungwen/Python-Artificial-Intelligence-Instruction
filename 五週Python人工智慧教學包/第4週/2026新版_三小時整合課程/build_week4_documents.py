@@ -55,7 +55,9 @@ slide("六單元 × 30 分","每段：講 10 分／做 15 分／驗 5 分","\n".
 for i,(t,name,syntax,output) in enumerate(TOPICS,3):
  slide(name,t+" 分鐘｜"+syntax,"概念與語法\n\n"+syntax+"\n\n用前三週基礎理解本單元。","操作與驗收\n\n打開同名 Notebook 章節。\n修改一行 → 執行 → 存檔\n成果："+output,i)
  slide(name+"｜實作",t+" 分鐘｜TASK · CHECK","TASK\n\n先預測程式的輸出，再執行與修改輸入。","CHECK\n\n交付 "+output+"\n\n說明資料如何經過 Python 處理。",i+6)
+for i,(t,name,syntax,output) in enumerate(TOPICS,17):
+ slide(name+"｜程式語法解析",t+" 分鐘｜逐行理解","關鍵字與資料型別\\n\\n"+syntax+"\\n\\n從輸入、運算、輸出逐行閱讀。","實作挑戰\\n\\n修改參數並重新執行。\\n\\n驗收結果："+output,i)
 slide("系統邊界與持續學習","安全、授權、驗證不可省略","本週：JSON、SRT、時間軸\nCPU 逐格練習通過","延伸：TTS／ASR／翻譯／MP4\n需另外測試模型和授權",15)
 slide("成果評分與下一週延伸","語法 30｜資料 25｜字幕 25｜紀錄 20","交付三個檔案：\nscene_plan.json\nsubtitles.srt\nrun_report.json","下週持續：\nCSV 批次輸入\nGradio／FFmpeg／部署",16)
 p.save(OUT/"第四週_文字可編輯簡報.pptx")
-print("完成",len(p.slides),"頁")
+assert len(p.slides)==22\nprint("完成",len(p.slides),"頁")
