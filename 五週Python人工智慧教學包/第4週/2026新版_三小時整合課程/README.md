@@ -25,13 +25,16 @@ Notebook 可在一般 Python 3／Colab CPU 下執行。英文範例旁白是手�
 Hugging Face V2：https://huggingface.co/spaces/wangsongwen/Multilingual-Video-Studio-V2
 
 
-## Word / PowerPoint 成品發布狀態（2026-11-06）
 
-本資料夾目前先上傳教學 Notebook 和 `build_week4_documents.py`；Word/PPTX 二進位成品不會因為產生器存在就自動出現在 GitHub。可透過 [GitHub Actions：Build Week4 Word and PPTX](https://github.com/wangsungwen/Python-Artificial-Intelligence-Instruction/actions/workflows/week4-documents.yml) 的 **Run workflow** 手動產生並提交；若工作流程失敗，檢查 Actions 權限與執行日誌，或於本機執行以下指令並手動上傳兩個檔案：
 
-```bash
-python -m pip install python-docx python-pptx
-python "五週Python人工智慧教學包/第4週/2026新版_三小時整合課程/build_week4_documents.py"
-```
+## 已發布 Office 成品（2026-11-06）
 
-生成檔名：`第四週_教師手冊.docx`、`第四週_文字可編輯簡報.pptx`。這兩個自動產生的檔案，與課堂另外設計的視覺加強版不同；請勿混淆。
+已將以下**真正的 Office 檔案**直接提交到 GitHub `main`，無須先執行產生器：
+
+- [第四週_教師手冊.docx](第四週_教師手冊.docx)：Word 教師手冊；課程概念、六單元教師示範、實作與驗收、逐行程式說明。
+- [第四週_文字可編輯簡報.pptx](第四週_文字可編輯簡報.pptx)：24 頁 16:9 校園學術雜誌風格版，文字及色塊為原生 PowerPoint 物件。
+- [第四週_語音AI與多語字幕影片_完整實作.ipynb](第四週_語音AI與多語字幕影片_完整實作.ipynb)：Python/Colab 實作。
+
+**版本註記：**本次 GitHub 發布的 Word／PPTX 是依第四週課綱重新生成並直接寫入倉庫的 Office 版本，不保證與對話中先前提供的本機設計檔逐位元相同。
+
+`build_week4_documents.py` 仍保留為可重複產生文件的教學程式；執行產生器可能覆蓋這次上傳的成品，操作前請先備份。
