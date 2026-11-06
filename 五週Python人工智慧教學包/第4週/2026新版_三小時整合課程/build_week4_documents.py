@@ -60,4 +60,6 @@ for i,(t,name,syntax,output) in enumerate(TOPICS,17):
 slide("系統邊界與持續學習","安全、授權、驗證不可省略","本週：JSON、SRT、時間軸\nCPU 逐格練習通過","延伸：TTS／ASR／翻譯／MP4\n需另外測試模型和授權",15)
 slide("成果評分與下一週延伸","語法 30｜資料 25｜字幕 25｜紀錄 20","交付三個檔案：\nscene_plan.json\nsubtitles.srt\nrun_report.json","下週持續：\nCSV 批次輸入\nGradio／FFmpeg／部署",16)
 p.save(OUT/"第四週_文字可編輯簡報.pptx")
-assert len(p.slides)==22\nprint("完成",len(p.slides),"頁")
+slide("實作成果展示｜JSON 與 SRT","課堂作品的最小交付標準","場景 ID、語言欄位、旁白與 duration","檔案：scene_plan.json\\nsubtitles.srt\\nrun_report.json",23)
+slide("結語｜從 Python 到多語影片","下一週延伸與可持續學習","Python 入門 → 資料驗證 → 多語字幕","模型 TTS/ASR/翻譯與 MP4 另行驗證",24)
+assert len(p.slides)==24\nprint("完成",len(p.slides),"頁")
