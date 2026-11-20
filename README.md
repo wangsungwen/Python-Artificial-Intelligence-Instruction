@@ -20,6 +20,15 @@
 | 第 4 週｜語音 AI 與多語字幕影片 | 把三個場景整理成多語台詞、字幕時間軸與檢查報告。 | [教學簡報](%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC4%E9%80%B1/2026%E6%96%B0%E7%89%88_%E4%B8%89%E5%B0%8F%E6%99%82%E6%95%B4%E5%90%88%E8%AA%B2%E7%A8%8B/%E7%AC%AC%E5%9B%9B%E9%80%B1_%E6%96%87%E5%AD%97%E5%8F%AF%E7%B7%A8%E8%BC%AF%E7%B0%A1%E5%A0%B1.pptx) | [開啟筆記本](%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC4%E9%80%B1/2026%E6%96%B0%E7%89%88_%E4%B8%89%E5%B0%8F%E6%99%82%E6%95%B4%E5%90%88%E8%AA%B2%E7%A8%8B/%E7%AC%AC%E5%9B%9B%E9%80%B1_%E8%AA%9E%E9%9F%B3AI%E8%88%87%E5%A4%9A%E8%AA%9E%E5%AD%97%E5%B9%95%E5%BD%B1%E7%89%87_%E5%AE%8C%E6%95%B4%E5%AF%A6%E4%BD%9C.ipynb) · [在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC4%E9%80%B1/2026%E6%96%B0%E7%89%88_%E4%B8%89%E5%B0%8F%E6%99%82%E6%95%B4%E5%90%88%E8%AA%B2%E7%A8%8B/%E7%AC%AC%E5%9B%9B%E9%80%B1_%E8%AA%9E%E9%9F%B3AI%E8%88%87%E5%A4%9A%E8%AA%9E%E5%AD%97%E5%B9%95%E5%BD%B1%E7%89%87_%E5%AE%8C%E6%95%B4%E5%AF%A6%E4%BD%9C.ipynb) |
 | 第 5 週｜AI 分類與成果發表 | 用影像的 RGB 平均值訓練最近中心分類器，以保留測試集檢查結果。 | [教學簡報](%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC5%E9%80%B1/W05_%E6%95%99%E5%AD%B8%E7%B0%A1%E5%A0%B1.pptx) | [開啟筆記本](%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC5%E9%80%B1/W05_%E5%AD%B8%E5%93%A1%E5%AF%A6%E4%BD%9C.ipynb) · [在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E4%BA%94%E9%80%B1Python%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%95%99%E5%AD%B8%E5%8C%85/%E7%AC%AC5%E9%80%B1/W05_%E5%AD%B8%E5%93%A1%E5%AF%A6%E4%BD%9C.ipynb) |
 
+## 補充教材｜YOLO 車牌辨識
+
+以 13 個單元練習 Python 語法與雙階段辨識。課堂預設是免 GPU、免模型權重的合成示範，可驗收圖片標註與影片逐幀輸出；真實辨識需另備可信任的車牌與字元模型權重。
+
+- [Colab 筆記本](%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E9%80%90%E5%8D%80%E5%A1%8A%E5%AF%A6%E4%BD%9C_%E8%AA%B2%E5%A0%82%E4%BF%AE%E6%AD%A3%E7%89%88.ipynb) · [在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E9%80%90%E5%8D%80%E5%A1%8A%E5%AF%A6%E4%BD%9C_%E8%AA%B2%E5%A0%82%E4%BF%AE%E6%AD%A3%E7%89%88.ipynb)
+- [下載 Word 教學手冊](%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E8%AA%9E%E6%B3%95%E4%BA%92%E5%8B%95%E5%BC%8F%E5%B0%88%E6%A1%88%E6%95%99%E5%AD%B8%E6%89%8B%E5%86%8A_v2.docx?raw=true)
+
+免權重的 28 個程式格已在本機 CPU 順序執行。尚未用真實模型權重或在 Colab 上實測。
+
 ## 各週操作與延伸練習
 
 1. **第 1 週**使用預設的 `INTERACTIVE=False` 可依序執行示範。要逐題輸入自己的資料，將設定改為 `True` 並重新執行設定格。
