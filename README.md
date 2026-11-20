@@ -22,6 +22,10 @@
 
 ## 補充教材｜YOLO 車牌辨識
 
+**公開模型推論版**：[在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E8%AA%9E%E6%B3%95%E4%BA%92%E5%8B%95%E5%BC%8F%E9%80%90%E5%8D%80%E5%A1%8A%E5%AF%A6%E4%BD%9C.ipynb) · [下載 Word 手冊](%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E8%AA%9E%E6%B3%95%E4%BA%92%E5%8B%95%E5%BC%8F%E5%B0%88%E6%A1%88%E6%95%99%E5%AD%B8%E6%89%8B%E5%86%8A.docx?raw=true)。首次連網下載 YOLOv8 車牌權重與 EasyOCR，執行第 0 單元；準備自有標註資料後可選擇訓練 YOLO11。新版已通過語法檢查，尚未在 Colab 驗證端到端推論。
+
+**原免權重教學版**
+
 以 13 個單元練習 Python 語法與雙階段辨識。課堂預設是免 GPU、免模型權重的合成示範，可驗收圖片標註與影片逐幀輸出；真實辨識需另備可信任的車牌與字元模型權重。
 
 - [Colab 筆記本](%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E9%80%90%E5%8D%80%E5%A1%8A%E5%AF%A6%E4%BD%9C_%E8%AA%B2%E5%A0%82%E4%BF%AE%E6%AD%A3%E7%89%88.ipynb) · [在 Colab 開啟](https://colab.research.google.com/github/wangsungwen/Python-Artificial-Intelligence-Instruction/blob/main/%E8%A3%9C%E5%85%85%E6%95%99%E6%9D%90/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98/YOLO%E8%BB%8A%E7%89%8C%E8%BE%A8%E8%AD%98_Python%E9%80%90%E5%8D%80%E5%A1%8A%E5%AF%A6%E4%BD%9C_%E8%AA%B2%E5%A0%82%E4%BF%AE%E6%AD%A3%E7%89%88.ipynb)
